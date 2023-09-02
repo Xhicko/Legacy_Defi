@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,900&family=Bebas+Neue&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+/* 
+font-family: 'Alegreya Sans SC', sans-serif; LOGO
+font-family: 'Bebas Neue', sans-serif; HEADINGS
+font-family: 'Josefin Sans', sans-serif; PARAGRAPHS
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+    background-color: #000;
+    color: #fff;
+}
+
+.Defi_Header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 10px;
+    background-color: #01013c;
+    position: relative;
+}
+
+
+.Logo_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo_content img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
+.Logo_content span{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 30px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 5px 10px;
+    background: none;
+    position: relative;
+    overflow: hidden;
+    transition: color .6s ease-in-out;
+}
+
+ul li a::before{
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background:none;
+    border-radius: 3px;
+    transform: scale(0%);
+    transition: transform 400ms;
+    transform-origin: left;
+}
+
+ul li a:hover::before{
+    background:#fff ;
+    transform: scale(100%);
+    /* transform-origin: right; */
+}
+
+.menu {
+  display: none;
+}
+
+
+/* Make Header Responsive start */
+@media screen and (max-width:800px){
+
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+}
+
+.line {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 5;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+}
+
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+
+.opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+
+.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+}
+
+.opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+    
+.Nav_item{ 
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left:-850px;
+    width: 100%;
+    background-color: #01013c97;
+    transition: .7s ease-in-out;
+}
+
+.Nav_item.activate{ 
+    left:0px;
+}
+
+
+ul li{
+    margin: 0 0 15px 0;
+}
+
+ul li a {
+    font-size: 20px;
+    /* padding: 10px 0 ; */
+    background: none;
+}
+      
+}
+
+@media screen and (max-width:450px){
+ 
+.Logo_content span{
+    font-size: 25px;
+}
+
+}
+
+/* Make Header Responsive End */

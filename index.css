@@ -186,8 +186,8 @@ ul li a {
 
 /* Make Header Responsive End */
 
-.Defi_Home{
-    width: 70%;
+.Defi_Home, .Defi_Services{
+    width: 85%;
     margin: 5em auto;
     display: flex;
     flex-direction: column;
@@ -195,36 +195,41 @@ ul li a {
     align-items: center;
 }
 
-.Defi_Home_Top{
+.Defi_Home_Top,.Defi_Service_Top {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.Defi_Home_Top h2, h3{
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 2px;
-    font-size:3rem ;
-    text-align: center;
-    margin: 0 0 25px 0;
-}
-
-.Defi_Home_Top h3{
+.Defi_Home_Top,  h2, h3, .Defi_Service_Top,  h2, h3{
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
     font-size:2rem ;
-    margin: 0 0 20px 0;
+    text-align: center;
+    margin: 15px 0 25px 0;
 }
 
-.Defi_Home_Top p{
+.Defi_Home_Top h3,
+.Defi_Service_Top h3{
+    font-size:1.5rem ;
+    text-transform: capitalize;
+    margin: 0 0 10px 0;
+}
+
+.Defi_Home_Top p,
+.Defi_Service_Top p{
     font-family: 'Josefin Sans', sans-serif;   
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 5px 10px;
     text-align: justify;
     line-height: 1.4rem;
     margin: 0 0 25px 0;
+    text-transform: lowercase;
 }
 
-.Defi_Home_Top button{
+.Defi_Home_Top button,
+.Defi_Service_Top button{
     margin: 15px;
     padding: 5px 20px;
     border: none;
@@ -250,10 +255,11 @@ ul li a {
     color: #030361;
     text-decoration: none;
     letter-spacing: 2px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Bebas Neue', sans-serif;   
     font-weight: bolder;
 }
+
 
 .Defi_Home_Center{
     margin: 25px 0;
@@ -264,8 +270,10 @@ ul li a {
 }
 
 .Defi_Home_Center h3{
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
     margin: 10px 0 0 0 ;
 }
 
@@ -277,7 +285,7 @@ ul li a {
 }
 
 .Defi_Motto{
-    padding: 10px 5px;
+    padding: 10px 20px;
     margin: 15px 0 0 0 ;
     display: flex;
     flex-direction: column;
@@ -290,9 +298,9 @@ ul li a {
 }
 
 .Defi_Motto h5{
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2rem;
-    letter-spacing: 2px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.3rem;
+    margin: 0 0 10px 0;
 }
 
 .Defi_Motto p{
@@ -300,7 +308,7 @@ ul li a {
     text-align: justify;
 }
 
-/* Make Home Responsive */
+/* Make Home Responsive Start */
 @media screen and (max-width:800px){
 
     .Defi_Home{
@@ -311,4 +319,136 @@ ul li a {
         grid-template-columns: repeat(1, 1fr);
     }
 
+}
+
+/* Make Home Responsive End */
+
+
+.Defi_Service_Bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Defi_Service_Hidden_List{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.Defi_Service_Hidden_List li{
+    width: 100%;
+    background-color: #030361;
+    padding: 10px 5px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    transition: color 300ms;
+}
+
+.Defi_Service_Hidden_List li::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transform: scaleX(0%);
+    transition: transform 500ms;
+    transform-origin: right;
+    z-index: -1;
+}
+
+.Defi_Service_Hidden_List li:hover{
+  color: #000;
+  z-index: 1;
+}
+
+ .Defi_Service_Hidden_List li:hover::before{
+    transform: scaleX(100%);
+    transform-origin: left;
+} 
+
+
+.Defi_Service_Hidden_List_Wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 0 ;
+}
+
+.Defi_Hidden_List_Content{
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.Defi_Hidden_List_Content img {
+    width: 100px;
+    object-fit: contain;
+    object-position: center;
+    margin: 0 10px 0 0;
+}
+
+.Defi_Hidden_List_Content p {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: justify;
+
+}
+
+.Defi_Hidden_List_Content:nth-child(2),
+.Defi_Hidden_List_Content:nth-child(3),
+.Defi_Hidden_List_Content:nth-child(4){
+    display: none;
+}
+
+
+.slide-in {
+    animation: slideIn 0.5s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Make Service Responsive Start */
+@media screen and (max-width:800px){
+    .Defi_Service_Hidden_List{
+        width: 50%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:655px){
+    .Defi_Service_Hidden_List{
+        width:80%;
+    }
+
+    .Defi_Hidden_List_Content img {
+        width: 150px;
+        object-fit: contain;
+        object-position: center;
+        margin: 0 0 10px 0;
+    }
+
+    .Defi_Hidden_List_Content{
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }

@@ -1,3 +1,4 @@
+// Navigation Logic
 let nav = document.querySelector('.Nav')
 let navItem = document.querySelector('.Nav_item')
 let listItem = document.querySelectorAll('.List_Item')
@@ -21,6 +22,7 @@ function toggleMenu() {
   }
 
 
+  // Service Hidden And Reveal logic
   let liProjectAds = document.querySelector('.Li_Project_Advisory')
   let liStraThin = document.querySelector('.Li_Strategic_Thinking')
   let liTeamBui = document.querySelector('.Li_Team_Building')
@@ -61,3 +63,64 @@ function toggleMenu() {
     StraThin2.style.display = 'flex'
     StraThin2.classList.add('slide-in')
   })
+
+
+// Reveal Accordion Icon Logic
+let experienceToggle = document.querySelectorAll('.toggleExperience')
+let toggleIcon = document.querySelectorAll('.toggle_icon')
+
+experienceToggle.forEach((iconToggle, index) => {
+  let isPlus = true
+
+  iconToggle.addEventListener('click', () => {
+    if (isPlus) {
+      toggleIcon[index].style.transform = 'rotate(45deg)'
+    } 
+  
+    else {
+      toggleIcon[index].style.transform = 'rotate(0deg)'
+    }
+    
+    isPlus = !isPlus
+
+  })
+})
+
+// Accordion Logic
+let exWrapList = document.querySelectorAll('.Experience_Wrapper')
+let exDetailsList = document.querySelectorAll('.Experience_Details')
+let isExpandedList = Array.from({ length: exDetailsList.length }, () => false);
+
+exWrapList.forEach((exWrap, index) => {
+  let exDetail = exDetailsList[index]
+
+  exWrap.addEventListener('click', () => {
+      const isExpanded = isExpandedList[index];
+
+      if (!isExpanded) {
+            // Close all open Experience_Details
+              exDetailsList.forEach((detail, i) => {
+                if (i !== index) {
+                  detail.style.maxHeight = '0';
+                  isExpandedList[i] = false;
+                }
+              });
+
+              // Close the clicked Experience_Detail
+          exDetail.style.maxHeight = exDetail.scrollHeight + 'px'
+        } 
+
+        else {
+        exDetail.style.maxHeight = '0'
+      }
+       // Toggle the state of the clicked Experience_Detail
+      isExpandedList[index] = !isExpanded
+    })
+})
+
+
+
+
+
+
+

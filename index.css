@@ -186,7 +186,9 @@ ul li a {
 
 /* Make Header Responsive End */
 
-.Defi_Home, .Defi_Services{
+.Defi_Home, 
+.Defi_Services, 
+.Defi_Experience{
     width: 85%;
     margin: 5em auto;
     display: flex;
@@ -213,6 +215,8 @@ ul li a {
 .Defi_Home_Top h3,
 .Defi_Service_Top h3{
     font-size:1.1rem ;
+    font-family: 'Josefin Sans', sans-serif;  
+    font-weight: 400;
     text-transform: capitalize;
     margin: 0 0 10px 0;
 }
@@ -221,6 +225,7 @@ ul li a {
 .Defi_Service_Top p{
     font-family: 'Josefin Sans', sans-serif;   
     font-size: 1.1rem;
+    font-weight: 300;
     padding: 5px 10px;
     text-align: justify;
     line-height: 1.4rem;
@@ -306,6 +311,7 @@ ul li a {
 .Defi_Motto p{
     font-family: 'Josefin Sans', sans-serif;   
     text-align: justify;
+    font-weight: 300;
 }
 
 /* Make Home Responsive Start */
@@ -391,6 +397,7 @@ ul li a {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 
@@ -403,6 +410,7 @@ ul li a {
 
 .Defi_Hidden_List_Content p {
     font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
     text-align: left;
 
 }
@@ -449,7 +457,112 @@ ul li a {
 
     .Defi_Hidden_List_Content{
         flex-direction: column;
-        align-items: center;
     }
     
 }
+
+/* Make Service Responsive End */
+
+
+.Experience_Wrapper{
+    width: 70%;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.Experience_Box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#01013c;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius:5px 5px 0 0;
+}
+
+.Experience_Box h4{
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.Experience_toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.toggle_icon{
+    width: 3px;
+    height: 15px;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.7s ease-in-out;
+  }
+  
+.toggle_icon::before {
+    content: '';
+    width: 15px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    top: 6px;
+    left: -6px;
+  }
+
+  .Experience_Details{
+    background-color: #01013c5e;
+    padding: 0 30px;
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .7s ease-in-out;
+  }
+
+  .Experience_Details h3{
+    text-transform: capitalize;
+  }
+
+  .Experience_Details ul{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .Experience_Details ul li{
+    list-style: disc;
+    width: 100%;
+    padding: 0 0 5px 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+  }
+
+  /* Make Experience Responsive Start */
+@media screen and (max-width:800px){
+
+    .Experience_Wrapper{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    .Experience_Wrapper{
+        width: 95%;
+    }
+
+    .Experience_Details h3{
+       font-size: 14px;
+      }
+
+}
+  /* Make Experience Responsive End */
+
+
+
+  

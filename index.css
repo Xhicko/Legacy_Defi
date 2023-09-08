@@ -12,8 +12,12 @@ font-family: 'Josefin Sans', sans-serif; PARAGRAPHS
     box-sizing: border-box;
 }
 
-body{
+html{
     scroll-behavior: smooth;
+    transition: all ease-in-out;
+}
+
+body{
     background-color: #000;
     color: #fff;
 }

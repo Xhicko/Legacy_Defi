@@ -768,6 +768,7 @@ ul li a {
 
 .Footer_contact a svg{
    width: 50px;
+   margin: 10px 0 15px 0;
    transition: transform 300ms ease-in-out;
 }
 
@@ -777,6 +778,13 @@ ul li a {
 
 /* Make About Responsive Start */
 @media screen and (max-width:600px){
+    .Footer a{
+        font-size: 15px;
+    }
+
+    .Footer p span{
+        font-size: 13px;
+    }
 
     .Footer_contact a svg{
         width: 30px;

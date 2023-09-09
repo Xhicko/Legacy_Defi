@@ -22,6 +22,55 @@ body{
     color: #fff;
 }
 
+.Defi_Wrapper{
+    position: relative;
+}
+
+.Socials{
+    position: fixed;
+    bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    z-index: 2;
+}
+
+.Socials svg{
+    width: 55px;
+    padding:  10px;
+    color:#fff;
+}
+
+.Back_to_top{
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.Back_to_top  svg{
+   width: 30px;
+   font-size: 20px;
+   color: #fff;
+   animation: moveUp 2000ms infinite;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
 .Defi_Header{
     width: 100%;
     display: flex;
@@ -192,7 +241,8 @@ ul li a {
 
 .Defi_Home, 
 .Defi_Services, 
-.Defi_Experience{
+.Defi_Experience,
+.Defi_About{
     width: 85%;
     margin: 5em auto;
     display: flex;
@@ -226,7 +276,8 @@ ul li a {
 }
 
 .Defi_Home_Top p,
-.Defi_Service_Top p{
+.Defi_Service_Top p,
+.Defi_About p{
     font-family: 'Josefin Sans', sans-serif;   
     font-size: 1.1rem;
     font-weight: 300;
@@ -401,7 +452,6 @@ ul li a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
 }
 
 
@@ -415,8 +465,9 @@ ul li a {
 .Defi_Hidden_List_Content p {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
+    font-size: 17px;
     text-align: left;
-
+    line-height:22px ;
 }
 
 .Defi_Hidden_List_Content:nth-child(2),
@@ -567,6 +618,159 @@ ul li a {
 }
   /* Make Experience Responsive End */
 
+.Defi_About_icon{
+    width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
+.About_Project_Counter{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.About_Project_Counter p{
+    position: absolute;
+    top:6px ;
+    left: 40%;
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.About_Project_Counter span{
+   display: none;
+}
   
+.Final{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.CountSize{
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 800;
+}
+
+.Svg{
+    color: #fff;
+    width: 25px;
+}
+
+
+/* Make About Responsive Start */
+@media screen and (max-width:800px){
+
+    .About_Project_Counter{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .About_Project_Counter p{
+       display: none;
+    }
+
+    .About_Project_Counter span{
+        display: flex;
+        margin: 60px 0 0 0;
+        font-size: 30px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+ 
+    
+    .Final{
+        margin: 60px 0 0 0;
+    }
+      
+}
+
+@media screen and (max-width:600px){
+
+.Defi_About_icon{
+    width: 90%;
+}
+
+}
+
+/* Make About Responsive End */
+
+.Footer{
+    width: 100%;
+    background-color: #01013c;
+    padding: 15px 20px;
+    margin: 20px 0 0 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Footer p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.Footer a{
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+}
+
+.Footer a span {
+    font-weight: 800;
+    font-size: 16px;
+    transition: all .5s ease-in-out;
+}
+
+.Footer a span:hover {
+    text-decoration: underline;
+}
+
+
+.Footer a:hover{
+    text-decoration: underline;
+}
+
+.Footer p span{
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 5px 0 0 0;
+}
+
+.Footer_contact{
+    text-decoration: none;
+}
+
+.Footer_contact a{
+  margin-right: 10px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.Footer_contact a svg{
+   width: 50px;
+   transition: transform 300ms ease-in-out;
+}
+
+.Footer_contact a svg:hover{
+    transform: scale(1.1);
+}

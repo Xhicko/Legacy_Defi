@@ -28,7 +28,7 @@ body{
 
 .Socials{
     position: fixed;
-    bottom: 50px;
+    bottom: 5px;
     display: flex;
     justify-content: space-between;
     width:100%;
@@ -43,7 +43,7 @@ body{
 
 .Back_to_top{
     position: fixed;
-    bottom: 10px;
+    bottom: 35px;
     right: 5px;
     border-radius: 50%;
     padding: 10px;
@@ -704,6 +704,7 @@ ul li a {
 
 }
 
+
 /* Make About Responsive End */
 
 .Footer{
@@ -744,7 +745,6 @@ ul li a {
     text-decoration: underline;
 }
 
-
 .Footer a:hover{
     text-decoration: underline;
 }
@@ -773,4 +773,13 @@ ul li a {
 
 .Footer_contact a svg:hover{
     transform: scale(1.1);
+}
+
+/* Make About Responsive Start */
+@media screen and (max-width:600px){
+
+    .Footer_contact a svg{
+        width: 30px;
+     }
+     
 }

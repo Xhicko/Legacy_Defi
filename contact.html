@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.LegacyDefi.Com</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/Images/favicon.ico" >
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+</head>
+<body>
+
+    <div class="Defi_Wrapper">
+
+        <div class="Defi_Header">
+                
+            <div class="Logo_content">
+                <img src="./Images/Logo.png" alt="">
+                <span>Legacy Defi</span>
+            </div>
+
+            <ul class="Nav_item">
+                <li class="List_Item"><a href="index.html">Home</a></li>
+                <li class="List_Item"><a href="index.html">Services</a></li>
+                <li class="List_Item"><a href="index.html">Experience</a></li>
+                <li class="List_Item"><a href="index.html">About</a></li>
+                <li class="List_Item"><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button  id="menuButton" class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                <svg class="Nav" width="50" height="60" viewBox="0 0 100 100">
+                  <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                  <path class="line line2" d="M 20,50 H 80" />
+                  <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+              </button>
+
+        </div>
+
+        <div class="Defi_Contact">
+            <form action="#">
+                <h3>contact legacy Defi</h3>
+
+              <div class="Contact_Top">
+
+                <div class="Contact_Form " id="First_Name">
+                    <input  id="firstname" placeholder="">
+                    <label for="firstname">First Name</label>
+                </div>
+
+                <div class="Contact_Form" id="Last_Name">
+                    <input  id="lastname" placeholder="">
+                    <label for="lastname">Last Name</label>
+                </div>
+
+              </div>
+
+              <div class="Contact_Center">
+
+                <div class="Contact_Form " id="Phone_Number">
+                    <input  id="phonenumber" placeholder="">
+                    <label for="phonenumber">Phone Number</label>
+                </div>
+
+                <div class="Contact_Form" id="Msg_Tag">
+                    <input  id="msgtag" placeholder="">
+                    <label for="msgtag">Message Tag</label>
+                </div>
+
+              </div>
+
+               <div class="Contact_Last">
+                    <div class="Contact_Form " id="Email">
+                        <input  id="email" placeholder="">
+                        <label for="email">email</label>
+                    </div>
+               </div>
+
+               <div class="Contact_Bottom">
+                    <div class="Contact_Form" id="Textarea">
+                        <textarea  id="textarea"  placeholder=""  cols="30" rows="10"> Your Message...</textarea>
+                    </div>
+               </div>
+
+               <button type="submit">Submit</button>
+          </form>
+        </div>
+
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

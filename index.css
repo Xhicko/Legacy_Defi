@@ -777,7 +777,7 @@ ul li a {
     transform: scale(1.1);
 }
 
-/* Make About Responsive Start */
+/* Make Footer Responsive Start */
 @media screen and (max-width:600px){
     .Footer a{
         font-size: 15px;
@@ -791,4 +791,280 @@ ul li a {
         width: 30px;
      }
      
+}
+/* Make Footer Responsive End */
+
+
+.Defi_Contact{
+    max-width: 500px;
+    width: 70%;
+    margin: 90px auto 0 auto;
+    color: #000;
+    background-color:#1010b95b;
+    border-radius: 5px;
+}
+
+
+.Defi_Contact form{
+padding: 10px 15px;
+}
+
+.Defi_Contact form h3{
+    color: #fff;
+}
+
+.Contact_Top,
+.Contact_Center,
+.Contact_Last,
+.Contact_Bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 30px 0;
+}
+
+.Contact_Form{
+    width:45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact_Form input{
+    width: 210px;
+    padding: 8px 5px;
+    border-radius: 3px;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.Contact_Form input:focus{
+    outline: none;
+}
+
+.Contact_Form label{
+   padding: 1px 5px;
+   width: 120px;
+   text-align: center;
+   transition: top 500ms, border-color 500ms, color 500ms;
+}
+
+#First_Name label{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    background-color: transparent;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+#First_Name input:focus ~  label,
+#First_Name input:not(:placeholder-shown) ~ label{
+    top:-15px ;
+    outline: transparent;
+    border: .5px solid #000;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+#Last_Name label{
+    position: absolute;
+    top: 5px;
+    right: 75px;
+    background-color: transparent;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+#Last_Name input:focus ~  label,
+#Last_Name input:not(:placeholder-shown) ~ label{
+    top:-15px ;
+    right: 55px;
+    outline: transparent;
+    border: .5px solid #000;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+#Phone_Number label{
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    background-color: transparent;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+#Phone_Number input:focus ~  label,
+#Phone_Number input:not(:placeholder-shown) ~ label{
+    top:-15px ;
+    outline: transparent;
+    border: .5px solid #000;
+    border-radius: 2px;
+    background-color: #fff;
+    width: 140px;
+}
+
+#Msg_Tag label{
+    position: absolute;
+    top: 5px;
+    right: 75px;
+    background-color: transparent;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+#Msg_Tag input:focus ~  label,
+#Msg_Tag input:not(:placeholder-shown) ~ label{
+    top:-15px ;
+    right: 55px;
+    outline: transparent;
+    border: .5px solid #000;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+#Email, #Textarea {
+    width: 100%;
+}
+
+#Email input{
+    width: 100%;
+}
+
+#Email label{
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    background-color: transparent;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+#Email input:focus ~  label,
+#Email input:not(:placeholder-shown) ~ label{
+    top:-15px ;
+    left: 35px;
+    outline: transparent;
+    border: .5px solid #000;
+    border-radius: 2px;
+    background-color: #fff;
+    width: 140px;
+}
+
+#Textarea textarea{
+    width: 100%;
+    outline: none;
+    padding: 10px 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    border-radius: 2px;
+}
+
+.Defi_Contact form button{
+    padding: 5px 20px;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Make Contact Responsive Start */
+@media screen and (max-width:700px){
+
+    .Contact_Top,
+    .Contact_Center,
+    .Contact_Last,
+    .Contact_Bottom{
+        flex-direction: column;
+        margin:  0;
+    }
+
+    .Contact_Form{
+        width:100%;
+        padding: 0 0 35px 0;
+    }
+
+    .Contact_Form input{
+        width: 100%;
+        padding: 13px 5px;
+    }
+
+    #First_Name label{
+        top: 10px;
+        left: 5px;
+    }
+
+    #First_Name input:focus ~  label,
+    #First_Name input:not(:placeholder-shown) ~ label{
+        top:-15px ;
+        left: 5px;
+    }
+
+    #Last_Name label{
+        top: 85px;
+        left: 5px;
+    }
+
+    #Last_Name input:focus ~  label,
+    #Last_Name input:not(:placeholder-shown) ~ label{
+        top:60px ;
+        left: 5px;
+    }
+
+    #Phone_Number label{
+        top: 5px;
+        left: 20px;
+    }
+
+    #Phone_Number input:focus ~  label,
+    #Phone_Number input:not(:placeholder-shown) ~ label{
+        top:-15px ;
+        left: 5px;
+    }
+
+    #Msg_Tag label{
+        top: 85px;
+        left: 20px;
+    }
+    
+    #Msg_Tag input:focus ~  label,
+    #Msg_Tag input:not(:placeholder-shown) ~ label{
+        top:60px ;
+        left: 5px;
+    }
+
+    #Email label{
+        top: 5px;
+        left: -10px;
+    }
+
+    #Email input:focus ~  label,
+    #Email input:not(:placeholder-shown) ~ label{
+    top:-15px ;
+    left: 5px;
+}
+
+}
+
+
+@media screen and (max-width:600px){
+
+    .Defi_Contact{
+        width: 95%;
+    }
+    
 }

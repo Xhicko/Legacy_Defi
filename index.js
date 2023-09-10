@@ -230,3 +230,10 @@ backToTopButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+window.onload = function() {
+  var inputFields = document.querySelectorAll('.Contact_Form input');
+  inputFields.forEach(function(input) {
+      input.blur(); // Remove focus from all input fields
+  });
+};

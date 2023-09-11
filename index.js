@@ -81,7 +81,7 @@ experienceToggle.forEach((iconToggle, index) => {
     isPlusList[index] = !isPlusList[index];
 
     // Update the icon state based on the isPlusList array
-    toggleIcon[index].style.transform = isPlusList[index] ? 'rotate(45deg)' : 'rotate(0deg)';
+    toggleIcon[index].style.transform = isPlusList[index] ? 'rotate(180deg)' : 'rotate(0deg)';
   });
 });
 
@@ -115,7 +115,7 @@ exWrapList.forEach((exWrap, index) => {
     isExpandedList[index] = !isExpanded;
 
     // Update the icon state based on the isPlusList array
-    toggleIcon[index].style.transform = isPlusList[index] ? 'rotate(45deg)' : 'rotate(0deg)';
+    toggleIcon[index].style.transform = isPlusList[index] ? 'rotate(180deg)' : 'rotate(0deg)';
   })
 })
 

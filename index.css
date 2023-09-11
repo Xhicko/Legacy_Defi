@@ -532,7 +532,7 @@ ul li a {
     justify-content: space-between;
     align-items: center;
     background-color:#01013c;
-    padding: 5px 20px;
+    padding: 5px 5px 0 5px;
     cursor: pointer;
     border-radius:5px 5px 0 0;
 }
@@ -551,24 +551,11 @@ ul li a {
     position: relative;
 }
 
-.toggle_icon{
-    width: 3px;
-    height: 15px;
-    background-color: #fff;
-    cursor: pointer;
-    position: relative;
-    transition: transform 0.7s ease-in-out;
-  }
-  
-.toggle_icon::before {
-    content: '';
+.toggle_box svg{
+    color: #fff;
     width: 15px;
-    height: 3px;
-    background-color: #fff;
-    position: absolute;
-    top: 6px;
-    left: -6px;
-  }
+    transition: transform 1s ease-in-out;
+}
 
   .Experience_Details{
     background-color: #01013c5e;

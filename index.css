@@ -19,6 +19,7 @@ html{
 body{
     background-color: #000;
     color: #fff;
+    width: 100%;
 }
 
 .Defi_Wrapper{
@@ -243,7 +244,7 @@ ul li a {
 .Defi_Services, 
 .Defi_Experience,
 .Defi_About{
-    width: 85%;
+    width: 75%;
     margin: 5em auto;
     display: flex;
     flex-direction: column;
@@ -405,6 +406,7 @@ ul li a {
     padding: 10px 5px;
     text-align: center;
     font-weight: 700;
+    font-size: 13px;
     font-family: 'Josefin Sans', sans-serif;
     border-radius: 3px;
     cursor: pointer;
@@ -597,7 +599,7 @@ ul li a {
 
 @media screen and (max-width:600px){
     .Experience_Wrapper{
-        width: 95%;
+        width: 98%;
     }
 
     .Experience_Details h3{

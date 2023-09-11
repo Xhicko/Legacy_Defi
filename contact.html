@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 
@@ -44,11 +46,11 @@
 
               <div class="Contact_Top">
 
-                <div class="Contact_Form " id="First_Name">
+                <div class="Contact_Form " id="First_Name" data-aos="zoom-in">
                     <input  id="firstname" placeholder="First Name" >
                 </div>
 
-                <div class="Contact_Form" id="Last_Name">
+                <div class="Contact_Form" id="Last_Name" data-aos="zoom-out">
                     <input  id="lastname" placeholder="Last Name">
                 </div>
 
@@ -56,23 +58,23 @@
 
               <div class="Contact_Center">
 
-                <div class="Contact_Form " id="Phone_Number">
+                <div class="Contact_Form " id="Phone_Number" data-aos="zoom-in">
                     <input  id="phonenumber" placeholder="Phone Number">
                 </div>
 
-                <div class="Contact_Form" id="Msg_Tag">
+                <div class="Contact_Form" id="Msg_Tag" data-aos="zoom-out">
                     <input  id="msgtag" placeholder="Message Tag">
                 </div>
 
               </div>
 
-               <div class="Contact_Last">
+               <div class="Contact_Last" data-aos="zoom-in">
                     <div class="Contact_Form " id="Email">
                         <input  id="email" placeholder="Email">
                     </div>
                </div>
 
-               <div class="Contact_Bottom">
+               <div class="Contact_Bottom" data-aos="zoom-out" >
                     <div class="Contact_Form" id="Textarea">
                         <textarea  id="textarea"  placeholder="Your Message..."  cols="30" rows="10"></textarea>
                     </div>
@@ -164,5 +166,10 @@
   </div>
     
     <script src="index.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
 </body>
 </html>

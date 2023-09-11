@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,900&family=Bebas+Neue&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
-
 /* 
 font-family: 'Alegreya Sans SC', sans-serif; LOGO
 font-family: 'Bebas Neue', sans-serif; HEADINGS
@@ -497,24 +496,26 @@ ul li a {
         width: 50%;
         flex-direction: column;
     }
-}
 
-@media screen and (max-width:655px){
-    .Defi_Service_Hidden_List{
-        width:80%;
+    
+    .Defi_Hidden_List_Content{
+        flex-direction: column;
     }
 
+
     .Defi_Hidden_List_Content img {
-        width: 230px;
+        width: 100%;
         object-fit: contain;
         object-position: center;
         margin: 0 0 10px 0;
     }
-
-    .Defi_Hidden_List_Content{
-        flex-direction: column;
-    }
     
+}
+
+@media screen and (max-width:655px){
+    .Defi_Service_Hidden_List{
+        width:90%;
+    }
 }
 
 /* Make Service Responsive End */
